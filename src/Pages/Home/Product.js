@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Product = ({ product }) => {
+const Product = ({ product, setOrders }) => {
     const { id, name, img, description, price, moq, available } = product;
    
     
@@ -13,9 +13,10 @@ const Product = ({ product }) => {
                 <img className="h-64 w-64 mx-auto" src={img }  alt="Shoes" />
                 <h5 class="card-title ml-8 text-sm">
                         Name:{name}<br />
-                        Price:{price}<br />
-                        MOQ:{moq}<br />
-                        Available:{available}<br/>
+                        Price:{parseInt(price)}<br />
+                        MOQ:{parseInt(moq)}<br />
+                        Available:{parseInt(available)}<br/>
+                        
                         Description:{description}
                     </h5>
                      
@@ -25,9 +26,14 @@ const Product = ({ product }) => {
                         
 
 
-<Link to="/products">
-                    <button className='btn btn-primary'>Purchase</button>
-                </Link>
+
+                    
+<label for="booking-modal"
+                       disabled={available.text === 0 }
+                       onClick={()=> setOrders(product)}
+                       class="btn modal-button">Purchase</label>
+
+               
                 
                     </div>
                 </div>
