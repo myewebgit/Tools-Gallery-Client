@@ -11,12 +11,12 @@ const Items =()=>{
     useEffect( ()=>{
         fetch('products.json')
         .then(res => res.json())
-        .then(data => setItems(data.slice(0,3)))
+        .then(data => setItems(data.slice(-3)))
     },[]);
     return (
-        <div>
+        <div className=" ">
 		<h1 className=" flex justify-center m-10 text-5xl"> Tools </h1>
-        <div className="flex justify-between ">
+        <div className="flex justify-between grid grid-cols-1 lg:grid-cols-3">
         {
             items.map(product=><Product
             key={product.id}

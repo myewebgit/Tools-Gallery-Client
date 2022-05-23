@@ -3,9 +3,9 @@ import React from "react";
 const Banner =()=>{
     return (
         <div>
-           
+          <img src="https://i.ibb.co/1M0f1sx/tools-header-1.webp?w=800&h=300&hash=A89D0DE6" class="w-full" /> 
 
-<div class="carousel w-full">
+{/* <div class="carousel w-full">
   <div id="item1" class="carousel-item w-full">
   <img src="https://i.ibb.co/1M0f1sx/tools-header-1.webp?w=800&h=300&hash=A89D0DE6" class="w-full" />
   </div> 
@@ -24,7 +24,7 @@ const Banner =()=>{
   <a href="#item2" class="btn btn-xs">2</a> 
   <a href="#item3" class="btn btn-xs">3</a> 
   <a href="#item4" class="btn btn-xs">4</a>
-</div>
+</div> */}
         </div>
     );
 };
