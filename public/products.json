@@ -48,7 +48,23 @@
     "available": "35"
        },
     {
+    "id": 9,
+    "name": "Leanne Graham",
+    "img": "https://i.ibb.co/BGbKJ9T/Heb24efe777a14a92a89a27c3320fe49d4-jpg-220x220.webp",
+    "price": "20",
+    "moq": "15",
+    "available": "35"
+       },
+    {
     "id": 7,
+    "name": "Leanne Graham",
+    "img": "https://i.ibb.co/BGbKJ9T/Heb24efe777a14a92a89a27c3320fe49d4-jpg-220x220.webp",
+    "price": "20",
+    "moq": "15",
+    "available": "35"
+       },
+    {
+    "id": 8,
     "name": "Leanne Graham",
     "img": "https://i.ibb.co/BGbKJ9T/Heb24efe777a14a92a89a27c3320fe49d4-jpg-220x220.webp",
     "price": "20",
