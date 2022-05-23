@@ -3,6 +3,7 @@ import './App.css';
 import About from './Pages/About/About';
 import Home from './Pages/Home';
 import AllProduct from './Pages/Home/AllProduct';
+import Blogs from './Pages/Home/Blogs';
 import Login from './Pages/Login/Login';
 import Registration from './Pages/Login/Registration';
 import Footer from './Shared/Footer';
@@ -20,6 +21,7 @@ function App() {
        <Route path="/home" element={<Home></Home>}></Route>
        <Route path="/products" element={<AllProduct></AllProduct>}></Route>
        <Route path="/about" element={<About></About>}></Route>
+       <Route path="/blogs" element={<Blogs></Blogs>}></Route>
        <Route path="/login" element={<Login></Login>}></Route>
        <Route path="/registration" element={<Registration></Registration>}></Route>
        <Route path="*" element={<NotFound></NotFound>}></Route>
