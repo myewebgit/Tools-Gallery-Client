@@ -1,74 +1,110 @@
 [
     {
     "id": 1,
-    "name": "Leanne Graham",
-    "img": "https://i.ibb.co/BGbKJ9T/Heb24efe777a14a92a89a27c3320fe49d4-jpg-220x220.webp",
-    "price": "20",
+    "name": "Battery-Bosch",
+    "img": "https://i.ibb.co/R7JwfkR/battery-bosch-gba-18v-55-ah-procore.jpg?",
+    "price": "120",
     "moq": "15",
-    "available": "35"
+    "available": "350",
+    "description": "Battery BOSCH GBA 18V 5,5 Ah ProCORE"
        },
     {
     "id": 2,
-    "name": "Leanne Graham",
-    "img": "https://i.ibb.co/BGbKJ9T/Heb24efe777a14a92a89a27c3320fe49d4-jpg-220x220.webp",
-    "price": "20",
+    "name": "Hammer-dewalt",
+    "img": "https://i.ibb.co/MPTzBXX/hammer-dewalt-dch072nt-body-only-tstak-ii.jpg",
+    "price": "200",
     "moq": "15",
-    "available": "35"
+    "available": "135",
+    "description": "Hammer DeWALT DCH172N (Body only)"
        },
     {
     "id": 3,
-    "name": "Leanne Graham",
-    "img": "https://i.ibb.co/BGbKJ9T/Heb24efe777a14a92a89a27c3320fe49d4-jpg-220x220.webp",
+    "name": "Jigsaw-Makita ",
+    "img": "https://i.ibb.co/GswRmrc/jigsaw-makita-4350fct-720-w.jpg",
     "price": "20",
     "moq": "15",
-    "available": "35"
+    "available": "35",
+    "description":"Jigsaw-Makita-4350fct-720-w"
        },
     {
     "id": 4,
-    "name": "Leanne Graham",
-    "img": "https://i.ibb.co/BGbKJ9T/Heb24efe777a14a92a89a27c3320fe49d4-jpg-220x220.webp",
+    "name": "Battery-Bosch",
+    "img": "https://i.ibb.co/ZHK0j14/battery-bosch-gba-12v-60-ah.jpg",
     "price": "20",
     "moq": "15",
-    "available": "35"
+    "available": "35",
+    "description":"Battery BOSCH GBA 12v-60-ah ProCORE"
        },
     {
     "id": 5,
-    "name": "Leanne Graham",
-    "img": "https://i.ibb.co/BGbKJ9T/Heb24efe777a14a92a89a27c3320fe49d4-jpg-220x220.webp",
+    "name": "Charger-Bosch ",
+    "img": "https://i.ibb.co/g6Mqrxd/charger-bosch-gal18v-20.jpg",
     "price": "20",
     "moq": "15",
-    "available": "35"
+    "available": "35",
+    "description":"Charger BOSCH gal18v-20"
        },
     {
     "id": 6,
-    "name": "Leanne Graham",
-    "img": "https://i.ibb.co/BGbKJ9T/Heb24efe777a14a92a89a27c3320fe49d4-jpg-220x220.webp",
+    "name": "Impact-Wrench ",
+    "img": "https://i.ibb.co/r5BrN6B/impact-wrench-dewalt-dcf901p2-2-x-50-ah-dcb115-tstak-ii.jpg",
     "price": "20",
     "moq": "15",
-    "available": "35"
+    "available": "35",
+    "description":"dewalt-dcf901p2-2-x-50-ah-dcb115-tstak-ii."
        },
     {
     "id": 9,
-    "name": "Leanne Graham",
-    "img": "https://i.ibb.co/BGbKJ9T/Heb24efe777a14a92a89a27c3320fe49d4-jpg-220x220.webp",
+    "name": "Hammer-Milwakee",
+    "img": "https://i.ibb.co/z426DyV/hammer-milwaukee-m18bh-0-body-only.jpg",
     "price": "20",
     "moq": "15",
-    "available": "35"
+    "available": "35",
+    "description":"Hammer-milwaukee-m18bh-0-body-only"
        },
     {
     "id": 7,
-    "name": "Leanne Graham",
-    "img": "https://i.ibb.co/BGbKJ9T/Heb24efe777a14a92a89a27c3320fe49d4-jpg-220x220.webp",
+    "name": "Led-Underhood-Torch",
+    "img": "https://i.ibb.co/cCBxWwT/led-underhood-torch-dewalt-dcl045-body-only.jpg",
     "price": "20",
     "moq": "15",
-    "available": "35"
+    "available": "35",
+    "description":"dewalt-dcl045-body-only"
+       },
+    {
+    "id": 10,
+    "name": "Hammer-dewalt-d",
+    "img": "https://i.ibb.co/K2qzRQb/hammer-dewalt-dch133nt-body-only-tstak-ii.jpg",
+    "price": "20",
+    "moq": "15",
+    "available": "35",
+    "description":"dch133nt-body-only-tstak-ii"
+       },
+    {
+    "id": 11,
+    "name": "Pack-carrying-case",
+    "img": "https://i.ibb.co/XDfsSB8/pack-carrying-case-tstak-ii-carrying-case-with-double-drawer-tstak-iv-dewalt-dwst83395-1.jpg",
+    "price": "20",
+    "moq": "15",
+    "available": "35",
+    "description":"tstak-ii-carrying-case-with-double-drawer"
+       },
+    {
+    "id": 12,
+    "name": "attery-dewalt-dcb184",
+    "img": "https://i.ibb.co/P4cDb9M/battery-dewalt-dcb184-18v-50-ah.jpg",
+    "price": "20",
+    "moq": "15",
+    "available": "35",
+    "description":"-dewalt-dcb184-18v-50-ah"
        },
     {
     "id": 8,
-    "name": "Leanne Graham",
-    "img": "https://i.ibb.co/BGbKJ9T/Heb24efe777a14a92a89a27c3320fe49d4-jpg-220x220.webp",
+    "name": "Plunge-Bosch",
+    "img": "https://i.ibb.co/5r07Vty/plunge-saw-bosch-gkt-18v-52-gc-body-only-l-boxx-238.jpg",
     "price": "20",
     "moq": "15",
-    "available": "35"
+    "available": "35",
+    "description":"gkt-18v-52-gc-body-only-l-boxx-238."
        }
     ]
