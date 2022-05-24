@@ -12,7 +12,7 @@ const Items =()=>{
         navigate(`/products`)}
 
     useEffect( ()=>{
-        fetch('products.json')
+        fetch('http://localhost:5000/service')
         .then(res => res.json())
         .then(data => setItems(data.slice(-3)))
     },[]);

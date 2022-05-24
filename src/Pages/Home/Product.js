@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 
 const Product = ({ product, setOrders }) => {
     const { id, name, img, description, price, moq, available } = product;
@@ -29,7 +29,7 @@ const Product = ({ product, setOrders }) => {
 
                     
 <label for="booking-modal"
-                       disabled={available.text === 0 }
+                       disabled={ (available) == 0 }
                        onClick={()=> setOrders(product)}
                        class="btn modal-button">Purchase</label>
 
