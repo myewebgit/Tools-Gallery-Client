@@ -8,11 +8,13 @@ const Modal = ({ orders, setOrders}) => {
   const [user, loading, error] = useAuthState(auth);
 
   const total = parseInt(moq*price );
-  // const orQty = parseInt(orQty*price );
+  
+ 
   
 
  
   const handleBooking =event =>{
+    
   
 const booking = {
   
@@ -64,22 +66,29 @@ fetch('http://localhost:5000/booking',{
           <label for="booking-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
          
          
-         <img className="h-24 w-24 mx-auto" src={img} alt="" />
-         <div className="text-center">
+        <div className="flex justify-center">
+        <img className="h-24 w-24 " src={img} alt="" />
+         <div className="">
           <h3 class="font-bold text-lg ">{name}</h3>
           <h3 class="font-bold text-sm">Unit Price:{price}</h3>
           <h3 class="font-bold text-sm">Min Order Qty:{moq}</h3>
           <h3 class="font-bold text-sm">Available Qty:{available}</h3>
          </div>
-          <form  onSubmit={handleBooking}  className="grid grid-cols-1 gap-2 justify-items-center mt-2 ">
+        </div>
+          <form  onSubmit={handleBooking }  className="grid grid-cols-1 gap-2 justify-items-center mt-2 ">
           
           <input type="text" name="name" disabled value={user?.displayName || ''} className="input input-bordered w-full max-w-xs" />
                         <input type="email" name="email" disabled value={user?.email || ''} className="input input-bordered w-full max-w-xs" />
                         <input type="text" name="phone" placeholder="Phone Number" className="input input-bordered w-full max-w-xs" />
-            <input type="text" name="Total" placeholder={total} class="input input-bordered w-full max-w-xs" />
+           
             <input type="text" placeholder={name} class="input input-bordered w-full max-w-xs" />
-            <input type="number" name="OrderUnit" placeholder="Order Quantity" class="input input-bordered w-full max-w-xs" />
-            <input type="Submit" placeholder="Order" class="btn btn-secondery w-full max-w-xs" />
+            
+            <input type="number" name="OrderUnit"  placeholder="Order Quantity" class="input input-bordered w-full max-w-xs" />
+            <label class="label">
+    <span class="label-text-alt">Alt label</span>
+    <span class="label-text-alt">Alt label</span>
+  </label>
+            <input  type="Submit" placeholder="Order" class="btn btn-secondery w-full max-w-xs" />
           </form>
         </div>
       </div>

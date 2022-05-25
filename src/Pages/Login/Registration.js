@@ -4,6 +4,7 @@ import auth from "../../firebasse.init";
 import { useForm } from "react-hook-form";
 import Loading from "../../Shared/Loading";
 import { Link, Navigate, useNavigate } from "react-router-dom";
+import useToken from "../../hooks/useToken";
 
 
 const Registration =()=>{
@@ -17,6 +18,8 @@ const Registration =()=>{
       ] = useCreateUserWithEmailAndPassword(auth);
       
       const [updateProfile, updating, updateerror] = useUpdateProfile(auth);
+
+      const [token] = useToken (user || guser)
       const navigate = useNavigate();
 let signInError;
       if(loading || gloading || updating){
@@ -26,15 +29,16 @@ let signInError;
       if(error || gerror || updateerror){
           signInError= <p className="text-red-500"><small>{error?.message ||gerror?.message ||updateerror?.message}</small> </p>
       }
-    if (user || guser) {
-        console.log(user || guser);
+    if (token) {
+        
+        navigate('/products')
     }
     const onSubmit = async data =>{
         console.log(data);
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile ( {displayName: data.name});
         console.log('update done');
-        navigate('/products')
+        
     } 
 
 
