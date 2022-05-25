@@ -18,9 +18,9 @@ const Items =()=>{
     },[]);
     return (
         <div className="">
-		<h1 className=" flex justify-center m-10 text-3xl font-bold"> New Arrival ....... </h1>
+		<h1 className=" flex justify-center  text-3xl font-bold"> New Arrival ....... </h1>
 
-        <div className="flex justify-between mx-16 gap-5 grid grid-cols-1 lg:grid-cols-3">
+        <div className="flex justify-between gap-5 grid grid-cols-1 lg:grid-cols-3">
         {
             items.map(product=><Product 
             key={product.id}
