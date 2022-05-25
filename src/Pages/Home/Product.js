@@ -1,9 +1,11 @@
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebasse.init";
 
 
 const Product = ({ product, setOrders }) => {
     const { id, name, img, description, price, moq, available } = product;
-   
+    const [user] =useAuthState(auth);       
     
     return (
         <div>
@@ -28,8 +30,9 @@ const Product = ({ product, setOrders }) => {
 
 
                     
-<label for="booking-modal"
-                       disabled={ (available) == 0 }
+<label for="booking-modal" 
+                       disabled={ (available) == 0 || (!user) }
+                      
                        onClick={()=> setOrders(product)}
                        class="btn modal-button">Purchase</label>
 
