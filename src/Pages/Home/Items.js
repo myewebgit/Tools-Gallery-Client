@@ -18,9 +18,9 @@ const Items =()=>{
     },[]);
     return (
         <div className="">
-		<h1 className=" flex justify-center m-10 text-5xl"> Tools </h1>
+		<h1 className=" flex justify-center m-10 text-3xl font-bold"> New Arrival ....... </h1>
 
-        <div className="flex justify-between grid grid-cols-1 lg:grid-cols-3">
+        <div className="flex justify-between mx-16 gap-5 grid grid-cols-1 lg:grid-cols-3">
         {
             items.map(product=><Product 
             key={product.id}
@@ -29,10 +29,11 @@ const Items =()=>{
             ></Product>)
             
         }
-         <button class="btn btn-active btn-secondary flex justify-center" onClick={()=>navigateToAllProduct()}>All Products</button>
+        
         </div>
         {orders && <Modal orders={orders}></Modal>}
-       
+        <div className="flex justify-center" >
+            <button class="btn btn-active btn-info my-2 " onClick={()=>navigateToAllProduct()}>All Products</button></div>
         </div>
     );
 };

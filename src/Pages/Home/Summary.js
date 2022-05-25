@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Summary =()=>{
+  const navigate =useNavigate();
     return (
         <div className="py-10">
           <div class="hero min-h-screen bg-base-200">
@@ -8,7 +10,7 @@ const Summary =()=>{
     <div class="max-w-96">
       <h1 class="text-sm ">News</h1>
       <p class="py-6 text-5xl text-green-900 font-bold">Tools-Gallery Named to TIME’s List of the TIME100 Most Influential Companies</p>
-      <button class="btn btn-primary">Learn More</button>
+      <button onClick={()=> navigate('/about')} class="btn btn-primary">Learn More</button>
     </div>
   </div>
   <img className="" width="760" height="600"  src="https://i.ibb.co/sF0HtLD/istockphoto-1136735121-612x612-1.jpg" alt=""/>
