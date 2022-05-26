@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Best from "./Best";
 import Modal from "./Modal";
 import Product from "./Product";
 
-const Items =()=>{
+const Best =()=>{
     const [items, setItems] = useState([]);
     const [orders, setOrders] = useState(null);
 
@@ -15,12 +14,12 @@ const Items =()=>{
     useEffect( ()=>{
         fetch('http://localhost:5000/service')
         .then(res => res.json())
-        .then(data => setItems(data.slice(-3)))
+        .then(data => setItems(data.slice(0,3)))
     },[]);
    
     return (
         <div className="">
-		<h1 className=" flex justify-center  text-3xl font-bold"> New Arrival ....... </h1>
+		<h1 className=" flex justify-center  text-3xl font-bold"> Best Seller ....... </h1>
 
         <div className="flex justify-between gap-5 grid grid-cols-1 lg:grid-cols-3">
         {
@@ -36,9 +35,9 @@ const Items =()=>{
         {orders && <Modal orders={orders}></Modal>}
         <div className="flex justify-center" >
             <button class="btn btn-active btn-info my-2 " onClick={()=>navigateToAllProduct()}>All Products</button></div>
-		<Best></Best>
+		
         </div>
     );
 };
 
-export default Items;
+export default Best;
