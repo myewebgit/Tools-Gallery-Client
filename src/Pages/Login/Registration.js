@@ -30,8 +30,7 @@ let signInError;
           signInError= <p className="text-red-500"><small>{error?.message ||gerror?.message ||updateerror?.message}</small> </p>
       }
     if (token) {
-        
-        navigate('/products')
+                navigate('/products')
     }
     const onSubmit = async data =>{
         console.log(data);
