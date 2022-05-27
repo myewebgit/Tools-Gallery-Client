@@ -23,8 +23,8 @@ const Users =()=>{
       <tr>
         <th>SL</th>
         <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
+        <th>Status</th>
+        <th>Status</th>
       </tr>
     </thead>
     <tbody>
