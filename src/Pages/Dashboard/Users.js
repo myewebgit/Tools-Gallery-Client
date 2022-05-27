@@ -4,7 +4,7 @@ import Loading from "../../Shared/Loading";
 import UserRow from "./UserRow";
 
 const Users =()=>{
-    const {data:users, isLoading, refetch} = useQuery('users', ()=>fetch('http://localhost:5000/user',{
+    const {data:users,  isLoading, refetch} = useQuery('users', ()=>fetch('http://localhost:5000/user',{
         method: 'GET',
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -21,7 +21,7 @@ const Users =()=>{
     {/* <!-- head --> */}
     <thead>
       <tr>
-        <th></th>
+        <th>SL</th>
         <th>Name</th>
         <th>Job</th>
         <th>Favorite Color</th>
@@ -29,9 +29,10 @@ const Users =()=>{
     </thead>
     <tbody>
       {
-          users.map(user =><UserRow
+          users.map((user,index) =><UserRow
           key={user._id}
           user={user}
+          index={index}
           refetch={refetch}
           ></UserRow>)
       }
