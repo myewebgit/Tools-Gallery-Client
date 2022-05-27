@@ -22,7 +22,7 @@ const Items =()=>{
         <div className="">
 		<h1 className=" flex justify-center  text-3xl font-bold"> New Arrival ....... </h1>
 
-        <div className="flex justify-between gap-5 grid grid-cols-1 lg:grid-cols-3">
+        <div className="flex justify-between gap-5 my-5 grid grid-cols-1 lg:grid-cols-3">
         {
             items.map(product=><Product 
             key={product.id}
@@ -34,8 +34,7 @@ const Items =()=>{
         
         </div>
         {orders && <Modal orders={orders}></Modal>}
-        <div className="flex justify-center" >
-            <button class="btn btn-active btn-info my-2 " onClick={()=>navigateToAllProduct()}>All Products</button></div>
+        
 		<Best></Best>
         </div>
     );

@@ -26,6 +26,9 @@ const Dashboard =()=>{
       <li><Link to="/dashboard/myreview">Add A Review</Link></li>
       <li><Link to="/dashboard/myprofile">My Profile</Link></li>
       { admin && <li><Link to="/dashboard/users">All Users</Link></li>}
+      { admin && <li><Link to="/dashboard/makeAdmin">Make Admin</Link></li>}
+      { admin && <li><Link to="/dashboard/manageAdmin">Manage Admin</Link></li>}
+     
       
     </ul>
   
