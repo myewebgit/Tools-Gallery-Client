@@ -3,14 +3,15 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebasse.init";
 import { toast } from 'react-toastify';
 
+
 const Modal = ({ orders, setOrders }) => {
-  const { _id, name, moq, img, available, price } = orders;
+  const { _id, name, moq, img, available, price} = orders;
   const [user, loading, error] = useAuthState(auth);
 
   const total = parseInt(moq * price);
 
 
-
+ 
 
 
   const handleBooking = event => {
@@ -84,7 +85,7 @@ const Modal = ({ orders, setOrders }) => {
 
             <input type="text" placeholder={name} class="input input-bordered w-full max-w-xs" />
 
-            <input type="number" name="OrderUnit" placeholder="Order Quantity" class="input input-bordered w-full max-w-xs" />
+            <input type="number" name="OrderUnit" placeholder="Order Quantity" class="input input-bordered w-full max-w-xs"/>
             
             <input type="Submit" placeholder="Order" class="btn btn-secondery w-full max-w-xs" />
           </form>

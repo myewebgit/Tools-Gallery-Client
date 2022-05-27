@@ -28,6 +28,7 @@ const Dashboard =()=>{
       { admin && <li><Link to="/dashboard/users">All Users</Link></li>}
       { admin && <li><Link to="/dashboard/makeAdmin">Make Admin</Link></li>}
       { admin && <li><Link to="/dashboard/manageAdmin">Manage Admin</Link></li>}
+      { admin && <li><Link to="/dashboard/addproduct">Add Product</Link></li>}
      
       
     </ul>
