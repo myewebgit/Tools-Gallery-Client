@@ -1,9 +1,26 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 
-const OwnerList =({owner, index})=>{
+const OwnerList =({owner, index, refetch})=>{
     const {img,name, email } = owner;
 
+const handleDelete = email =>{
+  fetch(`http://localhost:5000/owner/${email}`,{
+    method:'DELETE',
+    headers:{
+      authorization: `Bearer ${localStorage.getItem('accessToken')}`
+    }
+  })
+  .then(res => res.json())
+  .then(data =>{
+    console.log(data);
+    if(data.deleteCount){
+      toast.success(`Admin:${name} is deleted`)
+      refetch();
+    }
+  })
+}
 
     return (
         <tr>
@@ -15,7 +32,7 @@ const OwnerList =({owner, index})=>{
 </div></td>
         <td>{name}</td>
         <td>{email}</td>
-        <td><button  className="btn btn-xs btn-error">Delete</button></td>
+        <td><button onClick={() => handleDelete(email)}  className="btn btn-xs btn-error">Delete</button></td>
       </tr>
 
        

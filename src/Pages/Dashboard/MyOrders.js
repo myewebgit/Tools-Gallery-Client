@@ -10,6 +10,7 @@ const MyOrders = () => {
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
 
+  
   useEffect(() => {
     if (user) {
       fetch(`http://localhost:5000/booking?client=${user.email}`, {
@@ -31,6 +32,9 @@ const MyOrders = () => {
           setCarts(data));
     }
   }, [user]);
+
+
+
   return (
     <div>
       <h1>MyOrders:{carts.length}</h1>
@@ -61,6 +65,7 @@ const MyOrders = () => {
                 <td>{o.amount}</td>
                 <td>
                   {(o.amount && !o.paid )&& <Link to={`/dashboard/payment/${o._id}`}><button className="btn btn-xs btn-success">Pay</button></Link>}
+                  {(o.amount && !o.paid )&& <Link to={`/dashboard/payment/${o._id}`}><button  className="btn btn-xs btn-success">Panding</button></Link>}
                   {(o.amount && o.paid )&& <div>
                     <p><span className="text-success">Paid</span></p>
                     <p>Tr. ID#<span className="text-success">{o.transactionId}</span></p>

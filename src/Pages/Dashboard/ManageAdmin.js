@@ -4,7 +4,7 @@ import Loading from "../../Shared/Loading";
 import OwnerList from "./OwnerList";
 
 const ManageAdmin = () => {
-    const { data: owners, isloading } = useQuery('owners', () => fetch('http://localhost:5000/owner', {
+    const { data: owners, isloading, refetch } = useQuery('owners', () => fetch('http://localhost:5000/owner', {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }
@@ -15,7 +15,8 @@ const ManageAdmin = () => {
     }
     return (
         <div>
-            {/* <h1 >  Manage Admin:{owners.length} </h1> */}
+            <h1>Manage Admin:{owners.length}</h1>
+            
             <div class="overflow-x-auto">
                 <table class="table w-full">
 
@@ -34,6 +35,7 @@ const ManageAdmin = () => {
                                 key={owner._Key}
                                 owner={owner}
                                 index={index}
+                                refetch={refetch}
                             ></OwnerList>)
                         }
                     </tbody>

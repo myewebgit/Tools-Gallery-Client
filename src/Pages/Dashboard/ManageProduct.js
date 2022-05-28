@@ -22,7 +22,7 @@ setServices(remaining);
 
     return (
         <div>
-            <h1> Manage Product </h1>
+            <h1> Manage Product:{services.length} </h1>
             {
                 services.map(service => <div key={service._id}>
                     <img className="h-24 w-24" src={service.img} ></img>
