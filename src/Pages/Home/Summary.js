@@ -5,7 +5,7 @@ const Summary =()=>{
   const navigate =useNavigate();
     return (
         <div className="py-10">
-          <div class="hero min-h-screen bg-base-200">
+          <div class="hero min-h-screen bg-base-200 my-10">
   <div class="hero-content">
     <div class="max-w-96">
       <h1 class="text-sm ">News</h1>
@@ -16,7 +16,7 @@ const Summary =()=>{
   <img className="" width="760" height="600"  src="https://i.ibb.co/sF0HtLD/istockphoto-1136735121-612x612-1.jpg" alt=""/>
   
 </div>
-          <div class="stats w-full stats-vertical lg:stats-horizontal shadow ">
+          <div class="stats w-full stats-vertical lg:stats-horizontal shadow">
   
           <div class="stat">
     <div class="stat-title">Corporate Social <br/>Resposibility Year-2022</div>
